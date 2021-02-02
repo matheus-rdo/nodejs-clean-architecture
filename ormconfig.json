@@ -1,0 +1,18 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "cars",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+       "src/core/domain/*.ts"
+    ],
+    "cli": {
+       "entitiesDir": "src/entity",
+       "migrationsDir": "src/migration",
+       "subscribersDir": "src/subscriber"
+    }
+ }
